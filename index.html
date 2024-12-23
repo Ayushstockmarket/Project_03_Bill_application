@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- link the css file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- link the css fiel  -->
+  </head>
+  <body>
+    <div class="root">
+      <div class="one_bill">
+        <div class="four_one_bill_child">
+          <p>Bill</p>
+          <div class="enter_bill_please sa">
+            <span>₹</span>
+            <input class="one_input same_input_outline_remove" type="number" />
+          </div>
+        </div>
+        <div class="four_two_bill_child">
+          <p>Select Tip</p>
+          <div class="pre-percentage">
+            <button disabled class="btn-pre comparebtn same-remove">
+              <span class="btn-pre-data">5</span>%
+            </button>
+            <button disabled class="btn-pre comparebtn same-remove">
+              <span class="btn-pre-data">10</span>%
+            </button>
+            <button disabled class="btn-pre comparebtn same-remove">
+              <span class="btn-pre-data">15</span>%
+            </button>
+            <button disabled class="btn-pre comparebtn same-remove">
+              <span class="btn-pre-data">25</span>%
+            </button>
+            <button disabled class="btn-pre comparebtn same-remove">
+              <span class="btn-pre-data">50</span>%
+            </button>
+            <button disabled class="btn-pre comparebtn same-remove">
+              <span class="btn-pre-data">75</span>%
+            </button>
+          </div>
+          <div class="same-style-tip-and-no-of-people keepMargin sa">
+            <input
+              disabled
+              type="number"
+              class="same-remove input-same-style custom-tip compare"
+              placeholder="Custom Tip in Percentage"
+            />
+          </div>
+        </div>
+        <div class="four_two_bill_child">
+          <p>Number of People</p>
+          <div class="same-style-tip-and-no-of-people sa">
+            <input
+              disabled
+              type="number"
+              class="same-remove input-same-style no-of-people"
+              placeholder="Number of people"
+            />
+          </div>
+        </div>
+        <div class="four_three_bill_child">
+          <button disabled class="generate-bill same-remove">
+            Generate Bill
+          </button>
+        </div>
+      </div>
+      <div class="two_bill">
+        <div class="two_bill_same_style child_1_two_bill">
+          <p>Tip amount</p>
+          <p class="tip-amt">0</p>
+        </div>
+        <div class="two_bill_same_style child_2_two_bill">
+          <p>Total</p>
+          <p class="total-amt">0</p>
+        </div>
+        <div class="two_bill_same_style child_3_two_bill">
+          <p>Each Person Bill</p>
+          <p class="per-bill">0</p>
+        </div>
+        <div class="two_bill_same_style child_4_two_bill">
+          <button disabled class="same-remove reset-me">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

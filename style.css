@@ -1,0 +1,114 @@
+/* common styling */
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.root {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.one_bill {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.keepMargin {
+  margin-top: 0.625rem;
+}
+.one_bill p {
+  color: blueviolet;
+}
+.one_bill input {
+  outline: none;
+  border: none;
+  width: 100%;
+}
+input::placeholder {
+  color: #000000; /* Tomato color */
+  font-style: italic; /* Optional: italicize */
+}
+.enter_bill_please {
+  display: flex;
+  align-items: center;
+}
+.same-style-tip-and-no-of-people,
+.enter_bill_please {
+  border: 0.01rem solid black;
+  border-radius: 0.1rem;
+  overflow: hidden;
+  padding: 4px;
+}
+.one_bill {
+  border: 1px solid burlywood;
+  padding: 1rem;
+  background-color: black;
+  min-width: 18.75rem;
+}
+.pre-percentage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.pre-percentage > button {
+  background-color: darkorange;
+  border: none;
+  color: white;
+  padding: 10px 0;
+}
+.four_three_bill_child {
+  display: flex;
+  justify-content: center;
+}
+.four_three_bill_child button {
+  background-color: blueviolet;
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+.two_bill {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 0.625rem;
+  min-width: 18.75rem;
+  background-color: orange;
+}
+.two_bill_same_style {
+  display: flex;
+  justify-content: space-between;
+}
+.child_4_two_bill {
+  display: flex;
+  justify-content: center;
+}
+.child_4_two_bill button {
+  width: 100%;
+  padding: 0.625rem;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+}
+.same-remove {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+@media (max-width: 600px) {
+  .root {
+    flex-direction: column;
+  }
+  .two_bill,
+  .one_bill {
+    min-width: 6.25rem;
+  }
+}
+
+.sa {
+  background-color: white;
+}
